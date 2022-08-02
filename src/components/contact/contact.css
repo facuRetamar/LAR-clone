@@ -1,0 +1,107 @@
+.titleWrapper{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 3em;
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.firstLine, .secondLine{
+    flex: 1;
+    height: 2px;
+    background-color: rgb(97, 96, 96);
+}
+.contactoTitle{
+    color: rgb(97, 96, 96);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+.infoContainer{
+    display: flex;
+    max-width: 1220px;
+    width: 90%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1em;
+}
+.mapContainerLeaflet{
+    flex: 2;
+    aspect-ratio: 2 / 1;
+    position: relative;
+    z-index: 1;
+}
+.formContainer{
+    flex: 1;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: center;
+   
+}
+.contactInfo{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%
+}
+.form input, .form textarea{
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 0 .5em;
+    width: 95%;
+    font-size: 17px;
+}
+.form textarea{
+    height: auto;
+    padding: .5em
+}
+.contactInfo p{
+    margin: 10px 0;
+}
+.contactInfo:last-of-type{
+    margin-bottom: 17px
+}
+.form button{
+    font-size: 15px;
+    padding: .7em;
+    border: none;
+    background: linear-gradient(45deg, rgb(20,102,170), rgb(38, 150, 241));
+    border-radius: 3px;
+    margin-left: auto;
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: .1s;
+}
+.form button:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+}
+.icono{color:rgb(255, 109, 4)}
+@media(max-width: 1000px){
+    .infoContainer{flex-direction: column;}
+    .mapContainer{
+        width: 90%
+    }
+   .formContainer{
+    width: 90%
+   }
+}

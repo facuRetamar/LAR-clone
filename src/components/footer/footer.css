@@ -1,0 +1,59 @@
+.containerFooter{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+}
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 45px;
+    gap: 1em
+}
+.socialMedia > *{
+    cursor: pointer;
+    color: rgb(121, 121, 121)
+}
+.facebook:hover{
+    color:#4267B2
+}
+.youtube:hover{
+    color: #FF0000
+}
+.containerFooter button{
+    background:linear-gradient(45deg, rgb(20,102,170), rgb(38, 150, 241));
+    border: none;
+    border-radius: 3px;
+    padding: 1em;
+    color: white;
+    cursor: pointer;
+    margin-top: 2em
+}
+button a{
+    text-decoration: none;
+    color: white
+}
+.containerFooter h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.copyRight{
+    width: 90%;
+    margin: 30px auto 0 auto;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.copyRight span:hover{
+    cursor: pointer;
+    color: #2855b1
+}

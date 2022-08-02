@@ -1,0 +1,129 @@
+
+
+.contactoInfo{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    font-size: 14px;
+}
+.logoContainer{
+    min-width: 150px;
+    min-height: 100px;
+    max-width: 150px;
+    max-height: 100px;
+   display: flex;
+   align-items: center;
+   
+}
+.logoContainer > *{
+    margin-right: auto;
+}
+.navBar{
+    width: max-content;
+    transition: .3s;
+   
+}
+
+
+.navBarUl{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    color: gray;
+    gap: .5em
+  
+}
+.menuFrame{
+    border: 3px solid rgb(80, 80, 80);
+    height: 35px;
+    width: 35px;
+    display: none;
+    margin: 0 20px 0 auto;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+}
+.menuFrame div{
+    height: 3px;
+    width: 90%;
+    background-color: rgb(80, 80, 80);
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.logosWrapper{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    margin: 0 auto;
+}
+.firstStick{
+    top: 20%;
+    transform: translateY(-50%);
+}
+.secondStick{top: 45%;
+    transform: translateY(-50%);}
+
+.thirdStick{ top: 70%;
+    transform: translateY(-50%);
+}
+
+.navBarUl li, li a{
+    padding: 9px 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: none;
+    color: gray
+}
+.navBarUl li a:hover{
+    background: linear-gradient(45deg, rgb(20,102,170), rgb(38, 150, 241));
+    color: white
+}
+@media(max-width:768px){
+    .navBarUl{
+        flex-direction: column;
+
+    }
+    .menuFrame{
+        display: block;
+    }
+ 
+    .navBar{
+        width: 100%;
+    }
+    .navBarUl, .navBarUl li{
+        width: 90%;
+        color: white
+    }
+}
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 3em;
+    
+}
+.contenedorNavegador{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    height: max-content;
+    position: fixed;
+    box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.75);
+    z-index: 20;
+}

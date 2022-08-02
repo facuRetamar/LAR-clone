@@ -1,0 +1,69 @@
+.containerQuienesSomos{
+    width: 100%;
+    height: max-content;
+    min-height: 70vh;
+    background-image: url(/public/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0
+}
+.paragraph{
+    width: 70%;
+    font-size: 17px;
+    color: white;
+    backdrop-filter: blur(5px);
+    padding: 3em;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 8px;
+   
+}
+.paragraph p{
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.paragraph button{
+    background: linear-gradient(45deg, rgb(20,102,170), rgb(38, 150, 241));
+    border: none;
+    border-radius: 3px;
+    padding: 1em;
+    color: white;
+    cursor: pointer;
+}
+.wrapper{width: 70%;
+    max-width: 1170px;
+height: max-content;
+margin: 0 auto;}
+
+.quienesTitle{
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+.firstLine, .secondLine{
+    
+    height: 2px;
+    background-color: rgb(220, 220, 220);
+}
+.titleWrapper{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 3em
+}
+
+.firstLineContainer, .secondLineContainer{
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+    flex: 1;
+}
+@media (max-width: 1150px){
+    .paragraph{
+        width: 100%
+    }
+}
