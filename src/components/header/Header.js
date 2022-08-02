@@ -9,11 +9,20 @@ import { useState, useEffect, useRef } from "react"
 const Header = () => {
    let logo = useRef(null)
    let menuGsap = useRef(null)
+   let menuFrame = useRef(null)
    const tl = gsap.timeline()
     const [menu, setMenu] = useState(false)
  
     function changeMenu(){
         setMenu(p=>!p)
+        if(menu){
+            gsap.to(menuFrame.firstChild,{rotate: "0", y: 0, duration: .4})
+                gsap.to(menuFrame.children[1],{opacity: 1, duration: .4})
+                gsap.to(menuFrame.lastChild,{rotate: "0", y: 0,  duration: .4})
+        }else{ gsap.to(menuFrame.firstChild,{rotate: "45deg", y: 8, duration: .4})
+                gsap.to(menuFrame.children[1],{opacity: 0, duration: .4})
+                gsap.to(menuFrame.lastChild,{rotate: "-45deg", y: -8,  duration: .4})
+    }
     }
     useEffect(()=>{
         tl.from(logo,{opacity: 0,scale: .5, duration: 1, delay: .5, ease: "power4.out"})
@@ -27,9 +36,9 @@ const Header = () => {
         <nav className="navContainer"  >
             <div className="logosWrapper">
             <div className="logoContainer"  id="logo" ref={e=>logo=e}>
-            <img src="/logo.png" />
+            <img src="/logo.png" alt="logo"/>
             </div>
-           <div className="menuFrame" onClick={changeMenu} >
+           <div className="menuFrame" onClick={changeMenu} ref={e=>menuFrame=e}>
                 <div className="firstStick"></div>
                 <div className="secondStick"></div>
                 <div className="thirdStick"></div>

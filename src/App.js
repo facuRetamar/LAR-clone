@@ -27,7 +27,6 @@ function App() {
       <Quote />
       <Usuarios />
       <Footer />
- 
     </div>
   );
 }

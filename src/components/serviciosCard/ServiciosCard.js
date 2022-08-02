@@ -4,7 +4,7 @@ const ServiciosCard = ({data}) => {
   const {id, categoria, nombre, imagen} = data
   return (
     <div className="cardServicios" key={id} >
-        <img src={imagen} className="imagenServicio" />
+        <img src={imagen} className="imagenServicio" alt="servicioCard"/>
         <div className="overlayServicios">
           <p>{categoria}</p>
           <hr className="hrServicios" />

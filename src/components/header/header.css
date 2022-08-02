@@ -80,14 +80,19 @@
 }
 
 .navBarUl li, li a{
-    padding: 9px 7px;
+    padding: 7px 5px;
     border-radius: 3px;
     cursor: pointer;
     transition: .2s;
     text-decoration: none;
-    color: gray
+    color: gray;
+    display: block
 }
 .navBarUl li a:hover{
+    background: linear-gradient(45deg, rgb(20,102,170), rgb(38, 150, 241));
+    color: white
+}
+.navBarUl li:hover{
     background: linear-gradient(45deg, rgb(20,102,170), rgb(38, 150, 241));
     color: white
 }

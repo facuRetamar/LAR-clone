@@ -1,11 +1,12 @@
-import {useState, useEffect, useRef} from 'react'
+import {useState, useEffect} from 'react'
 import data from "../data"
 import "./categorias.css"
 import ServiciosCard from "../serviciosCard/ServiciosCard"
 
 
 const Categorias = () => {
-    let servicio = useRef(null)
+    
+
     const [serv, setServ] = useState("")
 
     const [info] = useState(data)
@@ -40,7 +41,7 @@ const Categorias = () => {
   return (
     <div id="section">
         <div className="filter">
-        <p onClick={filtrarTodas} style={serv === "todas" ? activo : normal} ref={e=>servicio=e}> Todas</p>
+        <p onClick={filtrarTodas} style={serv === "todas" ? activo : normal} > Todas</p>
         <span>/</span>
         <p onClick={filtrarConsumo} style={serv === "consumo" ? activo : normal} >Consumo</p>
         <span>/</span>

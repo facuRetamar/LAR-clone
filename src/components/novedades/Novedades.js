@@ -28,7 +28,7 @@ useEffect(()=>{
         </div>
         <div className="gridContainer" ref={e=>gridContainer = e}>
             <div className="firstNews">
-              <img src="/firstNews.jpg" className="imagenNews"/>
+              <img src="/firstNews.jpg" className="imagenNews" alt="novedad"/>
             <div className="overlayNews">
               <p>04/07/2022</p>
               <h3>La Escuela 105 Patria Libre se quedó con la Primera Edición del Premio Anual Las Artes y el Cooperat</h3>
@@ -36,7 +36,7 @@ useEffect(()=>{
               </div>
             </div>
             <div className="secondNews">
-            <img src="/secondNews.jpg" className="imagenNews"/>
+            <img src="/secondNews.jpg" className="imagenNews" alt="novedad2"/>
               <div className="overlayNews">
               <p>02/07/2022</p>
               <h3>Feliz Día de las Cooperativas</h3>
@@ -44,7 +44,7 @@ useEffect(()=>{
               </div>
             </div>
             <div className="thirdNews">
-            <img src="/thirdNews.jpg" className="imagenNews"/>
+            <img src="/thirdNews.jpg" className="imagenNews" alt="novedad3"/>
                <div className="overlayNews">
                <p>30/06/2022</p>
               <h3>Ariel Guarco: “Las Cooperativas Construyen un Mundo Mejor”</h3>
@@ -52,7 +52,7 @@ useEffect(()=>{
                </div>
             </div>
             <div className="fourthNews">
-            <img src="/fourthNews.jpg" className="imagenNews"/>
+            <img src="/fourthNews.jpg" className="imagenNews" alt="novedad4"/>
                <div className="overlayNews">
                <p>29/06/2022</p>
               <h3>Fontenla, en el marco del Día de las Cooperativas: "Volver a lo esencial"</h3>
@@ -60,7 +60,7 @@ useEffect(()=>{
                </div>
             </div>
             <div className="fifthNews">
-            <img src="/fifthNews.jpg" className="imagenNews"/>
+            <img src="/fifthNews.jpg" className="imagenNews" alt="novedad5"/>
                <div className="overlayNews">
                <p>23/06/2022</p>
               <h3>LAR entregó materiales al Centro de Formación Profesional</h3>
@@ -68,7 +68,7 @@ useEffect(()=>{
                </div>
             </div>
             <div className="sixthNews">
-            <img src="/sixthNews.jpg" className="imagenNews"/>
+            <img src="/sixthNews.jpg" className="imagenNews" alt="novedad6"/>
                <div className="overlayNews">
                <p>24/05/2022</p>
               <h3>LAR adquirió la planta de acopio de cereales del Doll</h3>
